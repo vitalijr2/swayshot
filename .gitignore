@@ -1,0 +1,12 @@
+*~
+*.marks
+*.releaseBackup
+\#*\#
+
+target
+.classpath
+.project
+.settings
+.hg
+.hgignore
+.hgtags
