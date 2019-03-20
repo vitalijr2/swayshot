@@ -4,7 +4,7 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/) 
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
-## 2.0.0 - 2019-03-20
+## [2.0.0] - 2019-03-20
 ### Added
 - Use slurp for regions.
 ### Changed
@@ -23,3 +23,5 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ## 1.0.0 - 2017-07-20
 ### Initial release
 - Keyboard shortcuts for whole screen and focused window.
+
+[2.0.0]: https://gitlab.com/racy/swayshot/tags/2.0.0
