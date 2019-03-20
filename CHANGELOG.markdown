@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/) 
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## [2.0.1] - 2019-03-20
+### Changed
+- Fix issue of region screenshot, use anoter bindkeys: Shift + Print Scr
+
 ## [2.0.0] - 2019-03-20
 ### Added
 - Use slurp for regions.
