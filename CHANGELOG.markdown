@@ -28,4 +28,5 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ### Initial release
 - Keyboard shortcuts for whole screen and focused window.
 
+[2.0.1]: https://gitlab.com/racy/swayshot/tags/2.0.1
 [2.0.0]: https://gitlab.com/racy/swayshot/tags/2.0.0
