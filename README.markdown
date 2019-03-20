@@ -4,6 +4,7 @@ Print screen helper for [sway][] adds keyboard shortcuts for screenshots:
 
 * **Print Scr** for whole screen
 * **Alt + Print Scr** for a focused window
+* **Shift + Alt + Print Scr** for a selected region
 
 It saves screenshots to `XDG_PICTURES_DIR`, see more details on [XDG user directories][]
 
