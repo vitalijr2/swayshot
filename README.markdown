@@ -20,10 +20,18 @@ Just install the AUR package [swayshot][swayshot-AUR] ☺
 
 ### Other Linux distributions
 
+Requires:
+* grim
+* jq
+* slurp
+* sway (certainly)
+
 You need to copy files:
 
 * `swayshot.config` copy to `/etc/sway/config.d` as `swayshot`;
 * `swayshot.sh` copy to `/usr/bin` as `swayshot` and make it executable.
+
+Then just reload Sway's configuration file (usually it's **$mod + Shift + c**).
 
 ## Contribution guidelines
 
