@@ -10,7 +10,7 @@ It saves screenshots to `XDG_PICTURES_DIR`, see more details on [XDG user direct
 
 You can define your own screenshot folder: set **SWAYSHOT_SCREENSHOTS** in `~/.config/swayshot.sh`.
 
-If `xsel` or `xclip` exist it copies full path to clipboard. Otherwise just prints it to `stdout`.
+If `wl-clipboard` (wl-copy), `xsel` or `xclip` exist it copies full path to clipboard. Otherwise just prints it to `stdout`.
 
 ## How do I get set up?
 

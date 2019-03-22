@@ -40,12 +40,14 @@ case "$1" in
 	window)
 		grim -g "$(swaymsg --type get_tree --raw | jq --raw-output "${filter}")" "$SCREENSHOT_FULLNAME"
 		;;
-	display|*)
+	*)
 		grim -o "$(swaymsg --type get_outputs --raw | jq --raw-output '.[] | select(.focused) | .name')" "$SCREENSHOT_FULLNAME"
 		;;
 esac
 
-if type xsel >/dev/null  2>&1; then
+if type wl-copy >/dev/null  2>&1; then
+	echo -n "$SCREENSHOT_FULLNAME" | wl-copy
+elif type xsel >/dev/null  2>&1; then
 	echo -n "$SCREENSHOT_FULLNAME" | xsel --clipboard
 elif type xclip &>/dev/null; then
 	echo -n "$SCREENSHOT_FULLNAME" | xclip -selection clipboard
