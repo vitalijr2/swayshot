@@ -6,11 +6,11 @@ Print screen helper for [sway][] adds keyboard shortcuts for screenshots:
 * **Alt + Print Scr** for a focused window
 * **Shift + Print Scr** for a selected region
 
-It saves screenshots to `XDG_PICTURES_DIR`, see more details on [XDG user directories][]
+It saves screenshots to **XDG_PICTURES_DIR**, see more details on [XDG user directories][]
 
-You can define your own screenshot folder: set **SWAYSHOT_SCREENSHOTS** in `~/.config/swayshot.sh`.
+You can define your own screenshot folder: set **SWAYSHOT_SCREENSHOTS** in **~/.config/swayshot.sh**.
 
-If `wl-clipboard` (wl-copy), `xsel` or `xclip` exist it copies full path to clipboard. Otherwise just prints it to `stdout`.
+If **wl-clipboard** (wl-copy), **xsel** or **xclip** exist it copies full path to clipboard. Otherwise just prints it to **stdout**.
 
 ## How do I get set up?
 
@@ -26,10 +26,15 @@ Requires:
 * slurp
 * sway (certainly)
 
+Optional dependencies:
+* xsel
+* xclip
+* wl-clipboard
+
 You need to copy files:
 
-* `swayshot.config` copy to `/etc/sway/config.d` as `swayshot`;
-* `swayshot.sh` copy to `/usr/bin` as `swayshot` and make it executable.
+* **swayshot.config** copy to **/etc/sway/config.d** as **swayshot**;
+* **swayshot.sh** copy to **/usr/bin* as **swayshot** and make it executable.
 
 Then just reload Sway's configuration file (usually it's **$mod + Shift + c**).
 
