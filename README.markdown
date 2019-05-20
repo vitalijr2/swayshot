@@ -34,7 +34,7 @@ Optional dependencies:
 You need to copy files:
 
 * **swayshot.config** copy to **/etc/sway/config.d** as **swayshot**;
-* **swayshot.sh** copy to **/usr/bin* as **swayshot** and make it executable.
+* **swayshot.sh** copy to **/usr/bin** as **swayshot** and make it executable.
 
 Then just reload Sway's configuration file (usually it's **$mod + Shift + c**).
 
