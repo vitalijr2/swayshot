@@ -6,9 +6,19 @@ Print screen helper for [sway][] adds keyboard shortcuts for screenshots:
 * **Alt + Print Scr** for a focused window
 * **Shift + Print Scr** for a selected region
 
-It saves screenshots to **XDG_PICTURES_DIR**, see more details on [XDG user directories][]
+## Customization ##
 
-You can define your own screenshot folder: set **SWAYSHOT_SCREENSHOTS** in **~/.config/swayshot.sh**.
+It saves screenshots to **XDG_PICTURES_DIR**, see more details on [XDG user directories][].
+Default filename is _screenshot_YYYY-MM-DD_HH24-MI-SS_SSS.png_
+
+But you can change path and timestamp format
+
+User variables in **~/.config/swayshot.sh**.
+
+* **SWAYSHOT_SCREENSHOTS** defines your own screenshot folder;
+* **SWAYSHOT_DATEFMT** defines timestamp format (see `man date`), thanks [Ranieri Althoff](https://gitlab.com/ranisalt) for help.
+
+## Path to last screenshot ##
 
 If **wl-clipboard** (wl-copy), **xsel** or **xclip** exist it copies full path to clipboard. Otherwise just prints it to **stdout**.
 
