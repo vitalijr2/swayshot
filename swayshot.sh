@@ -52,6 +52,6 @@ elif type xsel >/dev/null  2>&1; then
 elif type xclip &>/dev/null; then
 	echo -n "$SCREENSHOT_FULLNAME" | xclip -selection clipboard
 else
-	echo -n "$SCREENSHOT_FULLNAME"q
+	echo -n "$SCREENSHOT_FULLNAME"
 fi
 
