@@ -4,6 +4,15 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/) 
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+
+## [2.2.0] - 2019-05-29
+### Added
+- User can define timestamp format.
+
+## [2.1.0] - 2019-03-22
+### Added
+- Use `wl-clipboard` to copy screenshot path to clipboard.
+
 ## [2.0.1] - 2019-03-20
 ### Changed
 - Fix issue of region screenshot, use anoter bindkeys: Shift + Print Scr
@@ -28,5 +37,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ### Initial release
 - Keyboard shortcuts for whole screen and focused window.
 
+[2.2.0]: https://gitlab.com/racy/swayshot/tags/2.2.0
+[2.1.0]: https://gitlab.com/racy/swayshot/tags/2.1.0
 [2.0.1]: https://gitlab.com/racy/swayshot/tags/2.0.1
 [2.0.0]: https://gitlab.com/racy/swayshot/tags/2.0.0
