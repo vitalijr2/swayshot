@@ -1,6 +1,8 @@
 # swayshot #
 
-Print screen helper for [sway][] adds keyboard shortcuts for screenshots:
+Screenshot helper for [sway][].
+
+It adds keyboard shortcuts to take screenshot:
 
 * **Print Scr** for whole screen
 * **Alt + Print Scr** for a focused window
@@ -8,10 +10,9 @@ Print screen helper for [sway][] adds keyboard shortcuts for screenshots:
 
 ## Customization ##
 
-It saves screenshots to **XDG_PICTURES_DIR**, see more details on [XDG user directories][].
-Default filename is _screenshot_YYYY-MM-DD_HH24-MI-SS_SSS.png_
+It saves screenshots to **XDG_PICTURES_DIR** (usually `$HOME/Pictures`), see more details on [XDG user directories][].
 
-But you can change path and timestamp format
+Default template of screenshot filename is _screenshot_YYYY-MM-DD_HH24-MI-SS_SSS.png_. But you can change path and timestamp format
 
 User variables in **~/.config/swayshot.sh**.
 
@@ -48,17 +49,31 @@ You need to copy files:
 
 Then just reload Sway's configuration file (usually it's **$mod + Shift + c**).
 
-## Contribution guidelines
+## Contributing
 
-Please read [CONTRIBUTING](CONTRIBUTING.markdown) for details on our code of conduct, and the process for submitting pull requests to us.
+Please read [Contributing](contributing.md).
 
 ## History
 
-See [CHANGELOG](CHANGELOG.markdown)
+See [Changelog](changelog.md)
 
 ## License
 
-[Apache License v2.0](LICENSE)  
+Copyright 2017-2021 Witalij Berdinskich
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+[Apache License v2.0](license)  
 [![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg?style=flat)](http://www.apache.org/licenses/LICENSE-2.0.html)
 
 [sway]: http://swaywm.org/ "Sway is a drop-in replacement for the i3 window manager, but for Wayland instead of X11"
