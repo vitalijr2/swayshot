@@ -6,38 +6,41 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## Unreleased
 
+## [2.3.0] - 2021-03-19
+### Added
+-   Three new command that upload a screenshot to x0.at.
 
 ## [2.2.0] - 2019-05-29
 ### Added
-- User can define timestamp format.
+-   User can define timestamp format.
 
 ## [2.1.0] - 2019-03-22
 ### Added
-- Use `wl-clipboard` to copy screenshot path to clipboard.
+-   Use `wl-clipboard` to copy screenshot path to clipboard.
 
 ## [2.0.1] - 2019-03-20
 ### Changed
-- Fix issue of region screenshot, use anoter bindkeys: Shift + Print Scr
+-   Fix issue of region screenshot, use anoter bindkeys: Shift + Print Scr
 
 ## [2.0.0] - 2019-03-20
 ### Added
-- Use slurp for regions.
+-   Use slurp for regions.
 ### Changed
-- As [swaygrab was deprecated in sway 1.0](https://github.com/swaywm/sway/releases/tag/1.0) now it use grim.
-- Rename to swayshot, was swaygrab-helper.
+-   As [swaygrab was deprecated in sway 1.0](https://github.com/swaywm/sway/releases/tag/1.0) now it use grim.
+-   Rename to swayshot, was swaygrab-helper.
 
 ## 1.1.0 - 2017-07-22
 ### Added
-- Now it can copy full path to clipboard with xsel or xclip
+-   Now it can copy full path to clipboard with xsel or xclip
 
 ## 1.0.1 - 2017-07-20
 ### Fixed
-- Remove the file extensions `.sh` in the config
+-   Remove the file extensions `.sh` in the config
 
 
 ## 1.0.0 - 2017-07-20
 ### Initial release
-- Keyboard shortcuts for whole screen and focused window.
+-   Keyboard shortcuts for whole screen and focused window.
 
 [2.2.0]: https://gitlab.com/racy/swayshot/compare/2.1.0...2.2.0
 [2.1.0]: https://gitlab.com/racy/swayshot/compare/2.0.1...2.1.0
