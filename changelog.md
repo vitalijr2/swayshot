@@ -42,6 +42,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ### Initial release
 -   Keyboard shortcuts for whole screen and focused window.
 
+[2.2.0]: https://gitlab.com/racy/swayshot/compare/2.2.0...2.3.0
 [2.2.0]: https://gitlab.com/racy/swayshot/compare/2.1.0...2.2.0
 [2.1.0]: https://gitlab.com/racy/swayshot/compare/2.0.1...2.1.0
 [2.0.1]: https://gitlab.com/racy/swayshot/compare/2.0.0...2.0.1
