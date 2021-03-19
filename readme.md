@@ -4,9 +4,12 @@ Screenshot helper for [sway][].
 
 It adds keyboard shortcuts to take screenshot:
 
-* **Print Scr** for whole screen
-* **Alt + Print Scr** for a focused window
-* **Shift + Print Scr** for a selected region
+* **Print Scr** made screenshot for whole screen
+* **Alt + Print Scr** made screenshot for a focused window
+* **Shift + Print Scr** made screenshot for a selected region
+* **Super + Print Scr** made screenshot for whole screen then upload it to [x0.at][]
+* **Super + Alt + Print Scr** made screenshot for a focused window then upload it to [x0.at][]
+* **Super + Shift + Print Scr** made screenshot for a selected region then upload it to [x0.at][]
 
 ## Customization ##
 
@@ -44,7 +47,7 @@ Optional dependencies:
 
 You need to copy files:
 
-* **swayshot.config** copy to **/etc/sway/config.d** as **swayshot**;
+* **swayshot.conf** copy to **/etc/sway/config.d**;
 * **swayshot.sh** copy to **/usr/bin** as **swayshot** and make it executable.
 
 Then just reload Sway's configuration file (usually it's **$mod + Shift + c**).
@@ -77,5 +80,6 @@ limitations under the License.
 [![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg?style=flat)](http://www.apache.org/licenses/LICENSE-2.0.html)
 
 [sway]: http://swaywm.org/ "Sway is a drop-in replacement for the i3 window manager, but for Wayland instead of X11"
+[x0.at]: https://x0.at "x0.at Filehost. Files are kept for a minimum of 10, and a maximum of 360 Days."
 [XDG user directories]: https://wiki.archlinux.org/index.php/XDG_user_directories
 [swayshot-AUR]: https://aur.archlinux.org/packages/swayshot/
