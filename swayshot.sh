@@ -52,14 +52,14 @@ copy_to_clipboard() {
 
 show_message() {
 	if type notify-send >/dev/null  2>&1; then
-		notify-send "$1"  --expire-time=3000 --category=screenshot --icon="$2"
+		notify-send --expire-time=3000 --category=screenshot --icon="$2" "$3" "$1"
 	fi
 }
 
 upload_screenshot() {
 	if [ -f "$1" ]; then
 		if type curl >/dev/null  2>&1; then
-			curl -F "file=@\"$1\";filename=.png" 'https://x0.at'
+			curl -s -F "file=@\"$1\";filename=.png" 'https://x0.at'
 		fi
 	fi
 }
@@ -73,13 +73,13 @@ case "$2" in
 		SCREENSHOT_LOCATOR=$(upload_screenshot "$SCREENSHOT_FULLNAME")
 		if [ -z "$SCREENSHOT_LOCATOR" ]; then
 			copy_to_clipboard "$SCREENSHOT_FULLNAME"
-			show_message "$SCREENSHOT_FULLNAME" document-save
+			show_message "$SCREENSHOT_FULLNAME" document-save "Screenshot URL"
 		else
 			copy_to_clipboard "$SCREENSHOT_LOCATOR"
-			show_message "$SCREENSHOT_LOCATOR" document-send
+			show_message "$SCREENSHOT_LOCATOR" document-send "Screenshot path"
 		fi
 		;;
 	*)
 		copy_to_clipboard "$SCREENSHOT_FULLNAME"
-		show_message "$SCREENSHOT_FULLNAME" document-save
+		show_message "$SCREENSHOT_FULLNAME" document-save "Screenshot path"
 esac
