@@ -6,6 +6,11 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## Unreleased
 
+## [2.4.0] - 2021-03-20
+### Added
+-   Add title to message.
+-   Make curl silent
+
 ## [2.3.0] - 2021-03-19
 ### Added
 -   Three new command that upload a screenshot to x0.at.
@@ -42,6 +47,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ### Initial release
 -   Keyboard shortcuts for whole screen and focused window.
 
+[2.4.0]: https://gitlab.com/racy/swayshot/compare/2.3.0...2.4.0
 [2.3.0]: https://gitlab.com/racy/swayshot/compare/2.2.0...2.3.0
 [2.2.0]: https://gitlab.com/racy/swayshot/compare/2.1.0...2.2.0
 [2.1.0]: https://gitlab.com/racy/swayshot/compare/2.0.1...2.1.0
