@@ -29,6 +29,7 @@ def format_rect:
     "\(.rect.x),\(.rect.y) \(.rect.width)x\(.rect.height)";
 find_focused_node | format_rect
 '
+
 make_screenshot() {
 	case "$1" in
 		-h|--help)
@@ -55,7 +56,7 @@ copy_to_clipboard() {
 	elif type xclip &>/dev/null; then
 		printf "%s" "$1" | xclip -selection clipboard
 	else
-		printf "%s" "$1"
+		echo "$1"
 	fi
 }
 
