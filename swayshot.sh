@@ -73,10 +73,10 @@ case "$2" in
 		SCREENSHOT_LOCATOR=$(upload_screenshot "$SCREENSHOT_FULLNAME")
 		if [ -z "$SCREENSHOT_LOCATOR" ]; then
 			copy_to_clipboard "$SCREENSHOT_FULLNAME"
-			show_message "$SCREENSHOT_FULLNAME" document-save "Screenshot URL"
+			show_message "$SCREENSHOT_FULLNAME" document-save "Screenshot path"
 		else
 			copy_to_clipboard "$SCREENSHOT_LOCATOR"
-			show_message "$SCREENSHOT_LOCATOR" document-send "Screenshot path"
+			show_message "$SCREENSHOT_LOCATOR" document-send "Screenshot URL"
 		fi
 		;;
 	*)

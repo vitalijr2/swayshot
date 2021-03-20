@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## Unreleased
 
+## [2.4.1] - 2021-03-20
+### Fixed
+-   Swap titles of upload message
+
 ## [2.4.0] - 2021-03-20
 ### Added
 -   Add title to message.
@@ -47,6 +51,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ### Initial release
 -   Keyboard shortcuts for whole screen and focused window.
 
+[2.4.1]: https://gitlab.com/racy/swayshot/compare/2.4.0...2.4.1
 [2.4.0]: https://gitlab.com/racy/swayshot/compare/2.3.0...2.4.0
 [2.3.0]: https://gitlab.com/racy/swayshot/compare/2.2.0...2.3.0
 [2.2.0]: https://gitlab.com/racy/swayshot/compare/2.1.0...2.2.0
