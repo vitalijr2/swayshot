@@ -2,7 +2,7 @@
 # Screenshot helper for sway.
 # Copyright 2017,2019,2021 Witalij Berdinskich.
 
-if [[ -z "$WAYLAND_DISPLAY" ]]; then
+if [ -z "$WAYLAND_DISPLAY" ]; then
 	(>&2 echo Wayland is not running)
 	exit 1
 fi
@@ -13,7 +13,7 @@ if [ -f ~/.config/swayshot.sh ]; then
 	. ~/.config/swayshot.sh
 fi
 
-if [[ -z "$SWAYSHOT_SCREENSHOTS" ]]; then
+if [ -z "$SWAYSHOT_SCREENSHOTS" ]; then
 	SWAYSHOT_SCREENSHOTS=$(xdg-user-dir PICTURES)
 fi
 
@@ -76,7 +76,9 @@ upload_screenshot() {
 
 make_screenshot "$1" "$SCREENSHOT_FULLNAME"
 
-[[ ! -f "$SCREENSHOT_FULLNAME" ]] && return 1;
+if [ ! -f "$SCREENSHOT_FULLNAME" ]; then
+	return 1;
+fi
 
 case "$2" in
 	upload)
