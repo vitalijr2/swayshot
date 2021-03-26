@@ -21,10 +21,12 @@ User variables in **~/.config/swayshot.sh**.
 
 -   **SWAYSHOT_SCREENSHOTS** defines your own screenshot folder;
 -   **SWAYSHOT_DATEFMT** defines timestamp format (see `man date`), thanks [Ranieri Althoff](https://gitlab.com/ranisalt) for help.
+-   **SWAYSHOT_WL_COPY_FILE** defines whether the image file itself should be copied to clipboard.
 
 ## Path to last screenshot ##
 
 If **wl-clipboard** (wl-copy), **xsel** or **xclip** exist it copies full path to clipboard. Otherwise just prints it to **stdout**.
+With **wl-clipboard**, the **SWAYSHOT_WL_COPY_FILE** config variable allows you to copy the image file itself.
 
 ## How do I get set up?
 
