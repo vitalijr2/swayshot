@@ -11,6 +11,8 @@ It adds keyboard shortcuts to take screenshot:
 -   **Super + Alt + Print Scr** made screenshot for a focused window then upload it to [x0.at][]
 -   **Super + Shift + Print Scr** made screenshot for a selected region then upload it to [x0.at][]
 
+[![Screenshot has made by swayshot](swayshot.png)](https://gitlab.com/radio_rogal/swayshot)
+
 ## Customization ##
 
 It saves screenshots to **XDG_PICTURES_DIR** (usually `$HOME/Pictures`), see more details on [XDG user directories][].
