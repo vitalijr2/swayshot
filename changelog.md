@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## Unreleased
 
+## [2.6.1] - 2021-10-04
+### Fixed
+-   It does not exit after taking a screenshop: wl-copy still works in background.
+
 ## [2.6.0] - 2021-03-26
 ### Added
 -   Copy an image file itself to clipboard.

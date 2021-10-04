@@ -51,9 +51,9 @@ make_screenshot() {
 copy_to_clipboard() {
 	if type wl-copy >/dev/null  2>&1; then
 		if [ -z $SWAYSHOT_WL_COPY_FILE ]; then
-			printf "%s" "$1" | wl-copy
+			printf "%s" "$1" | wl-copy --paste-once
 		else
-			wl-copy < "$SCREENSHOT_FULLNAME"
+			wl-copy --paste-once < "$SCREENSHOT_FULLNAME"
 		fi
 	elif type xsel >/dev/null  2>&1; then
 		printf "%s" "$1" | xsel --clipboard
