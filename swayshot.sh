@@ -20,15 +20,7 @@ fi
 SCREENSHOT_TIMESTAMP=$(date "+${SWAYSHOT_DATEFMT:-%F_%H-%M-%S_%N}")
 SCREENSHOT_FULLNAME="$SWAYSHOT_SCREENSHOTS"/screenshot_${SCREENSHOT_TIMESTAMP}.png
 
-readonly filter='
-# returns the focused node by recursively traversing the node tree
-def find_focused_node:
-    if .focused then . else (if .nodes then (.nodes | .[] | find_focused_node) else empty end) end;
-# returns a string in the format that grim expects
-def format_rect:
-    "\(.rect.x),\(.rect.y) \(.rect.width)x\(.rect.height)";
-find_focused_node | format_rect
-'
+readonly filter='recurse(.nodes[], .floating_nodes[]) | select(.focused and .pid).rect | "\(.x),\(.y) \(.width)x\(.height)"'
 
 make_screenshot() {
 	case "$1" in
