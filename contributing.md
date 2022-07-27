@@ -19,6 +19,5 @@ Contribute your fixes and new features back to the main codebase using
 [GitLab merge requests][gitlab-merge-requests].
 
 [swayshot-issues]: https://gitlab.com/radio_rogal/swayshot/-/issues
-[issue-guidelines]: http://github.com/necolas/issue-guidelines/#readme
 [swayshot-gitlab]: https://gitlab.com/adio_rogal/swayshot/
 [gitlab-merge-requests]: https://docs.gitlab.com/ee/user/project/merge_requests/creating_merge_requests.html

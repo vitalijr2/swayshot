@@ -75,7 +75,7 @@ show_message() {
 upload_screenshot() {
 	if [ -f "$1" ]; then
 		if type curl >/dev/null  2>&1; then
-			curl -s -F "file=@\"$1\";filename=.png" 'https://x0.at'
+			curl -F "file=@\"$1\"" https://0x0.st
 		fi
 	fi
 }

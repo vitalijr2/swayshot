@@ -7,12 +7,13 @@ It adds keyboard shortcuts to take screenshot:
 -   **Print Scr** made screenshot for whole screen
 -   **Alt + Print Scr** made screenshot for a focused window
 -   **Shift + Print Scr** made screenshot for a selected region
--   **Super + Print Scr** made screenshot for whole screen then upload it to [x0.at][]
--   **Super + Alt + Print Scr** made screenshot for a focused window then upload it to [x0.at][]
--   **Super + Shift + Print Scr** made screenshot for a selected region then upload it to [x0.at][]
+-   **Super + Print Scr** made screenshot for whole screen then upload it to [0x0.st][]
+-   **Super + Alt + Print Scr** made screenshot for a focused window then upload it to [0x0.st][]
+-   **Super + Shift + Print Scr** made screenshot for a selected region then upload it to [0x0.st][]
 
 [![Screenshot has made by swayshot](swayshot.png)](https://gitlab.com/radio_rogal/swayshot)
 
+**Note:** since 2.7.0 it uses [0x0.st][] instead of [x0.at][].
 ## Customization ##
 
 It saves screenshots to **XDG_PICTURES_DIR** (usually `$HOME/Pictures`), see more details on [XDG user directories][].
@@ -96,5 +97,6 @@ I would like to say thanks to people who point something wrong in my code or pro
 
 [sway]: http://swaywm.org/ "Sway is a drop-in replacement for the i3 window manager, but for Wayland instead of X11"
 [x0.at]: https://x0.at "x0.at Filehost. Files are kept for a minimum of 10, and a maximum of 360 Days."
+[0x0.st]: https://0x0.st "File URLs are valid for at least 30 days and up to a year."
 [XDG user directories]: https://wiki.archlinux.org/index.php/XDG_user_directories
 [swayshot-AUR]: https://aur.archlinux.org/packages/swayshot/

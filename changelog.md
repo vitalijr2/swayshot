@@ -4,7 +4,8 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/) 
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
-## Unreleased
+## [2.7.0] - 2022-07-27
+- Replace [x0.at](https://x0.at) with [0x0.st](https://0x0.st)
 
 ## [2.6.1] - 2021-10-04
 ### Fixed
@@ -67,6 +68,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ### Initial release
 -   Keyboard shortcuts for whole screen and focused window.
 
+[2.7.0]: https://gitlab.com/racy/swayshot/compare/2.6.1...2.7.0
+[2.6.1]: https://gitlab.com/racy/swayshot/compare/2.6.0...2.6.1
 [2.6.0]: https://gitlab.com/racy/swayshot/compare/2.5.1...2.6.0
 [2.5.1]: https://gitlab.com/racy/swayshot/compare/2.5.0...2.5.1
 [2.5.0]: https://gitlab.com/racy/swayshot/compare/2.4.1...2.5.0
