@@ -94,6 +94,8 @@ I would like to say thanks to people who point something wrong in my code or pro
 -   [Chris Chamberlain](https://gitlab.com/neon64)
 -   [Alpha](https://gitlab.com/AlphaShadows)
 -   [Kishan Gupta](https://gitlab.com/kishangupta)
+-   [Zeioth](https://gitlab.com/Zeioth)
+-   [Dennis Weiershäuser](https://gitlab.com/dennis.weiershaeuser)
 
 [sway]: http://swaywm.org/ "Sway is a drop-in replacement for the i3 window manager, but for Wayland instead of X11"
 [x0.at]: https://x0.at "x0.at Filehost. Files are kept for a minimum of 10, and a maximum of 360 Days."
