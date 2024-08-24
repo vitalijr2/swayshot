@@ -14,7 +14,7 @@ if [ -f ~/.config/swayshot.sh ]; then
 fi
 
 if [ -z $SWAYSHOT_SCREENSHOTS ]; then
-	SWAYSHOT_SCREENSHOTS=$(xdg-user-dir PICTURES)
+  SWAYSHOT_SCREENSHOTS="$(grep '^XDG_PICTURES_DIR=' "$XDG_CONFIG_HOME/user-dirs.dirs" | cut -d '=' -f 2 | tr -d '"')"
 fi
 
 SCREENSHOT_TIMESTAMP=$(date "+${SWAYSHOT_DATEFMT:-%F_%H-%M-%S_%N}")
