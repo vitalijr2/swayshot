@@ -14,7 +14,13 @@ if [ -f ~/.config/swayshot.sh ]; then
 fi
 
 if [ -z "$SWAYSHOT_SCREENSHOTS" ]; then
-  SWAYSHOT_SCREENSHOTS="$(grep '^XDG_PICTURES_DIR=' "$XDG_CONFIG_HOME/user-dirs.dirs" | cut -d '=' -f 2 | tr -d '"')"
+  # only assumes user has at least $HOME set. man xdg-user-dirs-update(1)
+  XDG_USERS_FILE=${XDG_CONFIG_HOME:=$HOME/.config}/user-dirs.dirs
+  if [ -f "$XDG_USERS_FILE" ]; then
+    eval SWAYSHOT_SCREENSHOTS="$(grep '^XDG_PICTURES_DIR=' "$XDG_USERS_FILE" | cut -d '=' -f 2 | tr -d '"')"
+  else
+    SWAYSHOT_SCREENSHOTS="$HOME"
+  fi
 fi
 
 SCREENSHOT_TIMESTAMP=$(date "+${SWAYSHOT_DATEFMT:-%F_%H-%M-%S_%N}")
@@ -41,16 +47,16 @@ make_screenshot() {
 }
 
 copy_to_clipboard() {
-	if command-v wl-copy >/dev/null  2>&1; then
+	if command -v wl-copy >/dev/null  2>&1; then
 		if [ -z "$SWAYSHOT_WL_COPY_FILE" ]; then
 			printf "%s" "$1" | wl-copy
 		else
 			wl-copy < "$SCREENSHOT_FULLNAME"
 		fi
-	elif command-v xsel >/dev/null  2>&1; then
+	elif command -v xsel >/dev/null  2>&1; then
 		printf "%s" "$1" | xsel --clipboard
 		unset SWAYSHOT_WL_COPY_FILE
-	elif command-v xclip >/dev/null 2>&1; then
+	elif command -v xclip >/dev/null 2>&1; then
 		printf "%s" "$1" | xclip -selection clipboard
 		unset SWAYSHOT_WL_COPY_FILE
 	else
@@ -59,14 +65,14 @@ copy_to_clipboard() {
 }
 
 show_message() {
-	if command-v notify-send >/dev/null  2>&1; then
+	if command -v notify-send >/dev/null  2>&1; then
 		notify-send --expire-time=3000 --category=screenshot --icon="$2" "$3" "$1"
 	fi
 }
 
 upload_screenshot() {
 	if [ -f "$1" ]; then
-		if command-v curl >/dev/null  2>&1; then
+		if command -v curl >/dev/null  2>&1; then
 			curl -s -F "file=@\"$1\"" https://0x0.st
 		fi
 	fi
