@@ -41,16 +41,16 @@ make_screenshot() {
 }
 
 copy_to_clipboard() {
-	if type wl-copy >/dev/null  2>&1; then
+	if command-v wl-copy >/dev/null  2>&1; then
 		if [ -z "$SWAYSHOT_WL_COPY_FILE" ]; then
 			printf "%s" "$1" | wl-copy
 		else
 			wl-copy < "$SCREENSHOT_FULLNAME"
 		fi
-	elif type xsel >/dev/null  2>&1; then
+	elif command-v xsel >/dev/null  2>&1; then
 		printf "%s" "$1" | xsel --clipboard
 		unset SWAYSHOT_WL_COPY_FILE
-	elif type xclip &>/dev/null; then
+	elif command-v xclip >/dev/null 2>&1; then
 		printf "%s" "$1" | xclip -selection clipboard
 		unset SWAYSHOT_WL_COPY_FILE
 	else
@@ -59,14 +59,14 @@ copy_to_clipboard() {
 }
 
 show_message() {
-	if type notify-send >/dev/null  2>&1; then
+	if command-v notify-send >/dev/null  2>&1; then
 		notify-send --expire-time=3000 --category=screenshot --icon="$2" "$3" "$1"
 	fi
 }
 
 upload_screenshot() {
 	if [ -f "$1" ]; then
-		if type curl >/dev/null  2>&1; then
+		if command-v curl >/dev/null  2>&1; then
 			curl -s -F "file=@\"$1\"" https://0x0.st
 		fi
 	fi
