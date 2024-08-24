@@ -2,7 +2,7 @@
 # Screenshot helper for sway.
 # Copyright 2017,2019,2021 Witalij Berdinskich.
 
-if [ -z $WAYLAND_DISPLAY ]; then
+if [ -z "$WAYLAND_DISPLAY" ]; then
 	(>&2 echo Wayland is not running)
 	exit 1
 fi
@@ -13,7 +13,7 @@ if [ -f ~/.config/swayshot.sh ]; then
 	. ~/.config/swayshot.sh
 fi
 
-if [ -z $SWAYSHOT_SCREENSHOTS ]; then
+if [ -z "$SWAYSHOT_SCREENSHOTS" ]; then
   SWAYSHOT_SCREENSHOTS="$(grep '^XDG_PICTURES_DIR=' "$XDG_CONFIG_HOME/user-dirs.dirs" | cut -d '=' -f 2 | tr -d '"')"
 fi
 
@@ -42,7 +42,7 @@ make_screenshot() {
 
 copy_to_clipboard() {
 	if type wl-copy >/dev/null  2>&1; then
-		if [ -z $SWAYSHOT_WL_COPY_FILE ]; then
+		if [ -z "$SWAYSHOT_WL_COPY_FILE" ]; then
 			printf "%s" "$1" | wl-copy
 		else
 			wl-copy < "$SCREENSHOT_FULLNAME"
@@ -81,16 +81,16 @@ fi
 case "$2" in
 	upload)
 		SCREENSHOT_LOCATOR=$(upload_screenshot "$SCREENSHOT_FULLNAME")
-		if [ -z $SCREENSHOT_LOCATOR ]; then
+		if [ -z "$SCREENSHOT_LOCATOR" ]; then
 			copy_to_clipboard "$SCREENSHOT_FULLNAME"
 			show_message "$SCREENSHOT_FULLNAME" document-save "Screenshot path"
-			if [ ! -z $SWAYSHOT_WL_COPY_FILE ]; then
+			if [ -n "$SWAYSHOT_WL_COPY_FILE" ]; then
 				show_message "Screenshot was copied to clipboard.\\nFeel free to paste it." "$SCREENSHOT_FULLNAME" "Screenshot image"
 			fi
 		else
 			copy_to_clipboard "$SCREENSHOT_LOCATOR"
 			show_message "$SCREENSHOT_LOCATOR" document-send "Screenshot URL"
-			if [ ! -z $SWAYSHOT_WL_COPY_FILE ]; then
+			if [ -n "$SWAYSHOT_WL_COPY_FILE" ]; then
 				show_message "Screenshot was copied to clipboard.\\nFeel free to paste it." "$SCREENSHOT_FULLNAME" "Screenshot image"
 			fi
 		fi
@@ -98,7 +98,7 @@ case "$2" in
 	*)
 		copy_to_clipboard "$SCREENSHOT_FULLNAME"
 		show_message "$SCREENSHOT_FULLNAME" document-save "Screenshot path"
-		if [ ! -z $SWAYSHOT_WL_COPY_FILE ]; then
+		if [ -n "$SWAYSHOT_WL_COPY_FILE" ]; then
 			show_message "Screenshot was copied to clipboard.\\nFeel free to paste it." "$SCREENSHOT_FULLNAME" "Screenshot image"
 		fi
 esac
