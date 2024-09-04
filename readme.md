@@ -17,7 +17,7 @@ It adds keyboard shortcuts to take screenshot:
 ## Customization ##
 
 It saves screenshots to **XDG_PICTURES_DIR** (usually `$HOME/Pictures`), see more details on [XDG user directories][].
-If this folder is not found then **swayshot** saves screenshots to **HOME**.
+If this folder is not found then **swayshot** saves a screenshot to **HOME**.
 
 Default template of screenshot filename is _screenshot_YYYY-MM-DD_HH24-MI-SS_SSS.png_. But you can change path and timestamp format
 
