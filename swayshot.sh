@@ -65,8 +65,10 @@ copy_to_clipboard() {
 }
 
 show_message() {
-	if command -v notify-send >/dev/null  2>&1; then
-		notify-send --expire-time=3000 --category=screenshot --icon="$2" "$3" "$1"
+	if [ -z $SWAYSHOT_HIDE_NOTIFICATION ]; then
+		if command -v notify-send >/dev/null 2>&1; then
+			notify-send --expire-time=3000 --category=screenshot --icon="$2" "$3" "$1"
+		fi
 	fi
 }
 
