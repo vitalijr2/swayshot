@@ -4,51 +4,73 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/) 
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+
+## [2.8.0] - 2024-09-06
+### Added
+- **SWAYSHOT_HIDE_NOTIFICATION** allows to avoid the notification
+
+## [2.7.4] - 2024-09-04
+### Changed
+- **xdg-user-dir** is optional dependency
+
+## [2.7.3] - 2022-07-27
+### Fixed
+- Fix the floating window screenshot
+
+## [2.7.2] - 2022-07-27
+### Fixed
+- Fix the option **paste-once** of  **wl-copy**
+
+## [2.7.1] - 2022-07-27
+### Fixed
+- Make **curl** silent
+
 ## [2.7.0] - 2022-07-27
+### Added
 - Replace [x0.at](https://x0.at) with [0x0.st](https://0x0.st)
 
-## [2.6.1] - 2021-10-04
+## 2.6.1 - 2021-10-04
 ### Fixed
 -   It does not exit after taking a screenshop: wl-copy still works in background.
 
-## [2.6.0] - 2021-03-26
+## 2.6.0 - 2021-03-26
 ### Added
 -   Copy an image file itself to clipboard.
 
-## [2.5.1] - 2021-03-21
+## 2.5.1 - 2021-03-21
 ### Fixed
 -   Make script POSIX shell compatible.
 
-## [2.5.0] - 2021-03-20
+## 2.5.0 - 2021-03-20
 ### Fixed
 -   Bashisms.
 
-## [2.4.1] - 2021-03-20
+## 2.4.1 - 2021-03-20
 ### Fixed
 -   Swap titles of upload message.
 
-## [2.4.0] - 2021-03-20
+## 2.4.0 - 2021-03-20
 ### Added
 -   Add title to message.
 -   Make curl silent.
 
-## [2.3.0] - 2021-03-19
+## 2.3.0 - 2021-03-19
 ### Added
 -   Three new command that upload a screenshot to x0.at.
 
-## [2.2.0] - 2019-05-29
+## 2.2.0 - 2019-05-29
 ### Added
 -   User can define timestamp format.
 
-## [2.1.0] - 2019-03-22
+## 2.1.0 - 2019-03-22
 ### Added
 -   Use `wl-clipboard` to copy screenshot path to clipboard.
 
-## [2.0.1] - 2019-03-20
+## 2.0.1 - 2019-03-20
 ### Changed
 -   Fix issue of region screenshot, use anoter bindkeys: Shift + Print Scr.
 
-## [2.0.0] - 2019-03-20
+## 2.0.0 - 2019-03-20
 ### Added
 -   Use slurp for regions.
 ### Changed
@@ -68,15 +90,3 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ### Initial release
 -   Keyboard shortcuts for whole screen and focused window.
 
-[2.7.0]: https://gitlab.com/racy/swayshot/compare/2.6.1...2.7.0
-[2.6.1]: https://gitlab.com/racy/swayshot/compare/2.6.0...2.6.1
-[2.6.0]: https://gitlab.com/racy/swayshot/compare/2.5.1...2.6.0
-[2.5.1]: https://gitlab.com/racy/swayshot/compare/2.5.0...2.5.1
-[2.5.0]: https://gitlab.com/racy/swayshot/compare/2.4.1...2.5.0
-[2.4.1]: https://gitlab.com/racy/swayshot/compare/2.4.0...2.4.1
-[2.4.0]: https://gitlab.com/racy/swayshot/compare/2.3.0...2.4.0
-[2.3.0]: https://gitlab.com/racy/swayshot/compare/2.2.0...2.3.0
-[2.2.0]: https://gitlab.com/racy/swayshot/compare/2.1.0...2.2.0
-[2.1.0]: https://gitlab.com/racy/swayshot/compare/2.0.1...2.1.0
-[2.0.1]: https://gitlab.com/racy/swayshot/compare/2.0.0...2.0.1
-[2.0.0]: https://gitlab.com/racy/swayshot/compare/1.1.0...2.0.0
