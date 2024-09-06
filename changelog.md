@@ -5,27 +5,27 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
 
-## [2.8.0] - 2024-09-06
+## 2.8.0 - 2024-09-06
 ### Added
 - **SWAYSHOT_HIDE_NOTIFICATION** allows to avoid the notification
 
-## [2.7.4] - 2024-09-04
+## 2.7.4 - 2024-09-04
 ### Changed
 - **xdg-user-dir** is optional dependency
 
-## [2.7.3] - 2022-07-27
+## 2.7.3 - 2022-07-27
 ### Fixed
 - Fix the floating window screenshot
 
-## [2.7.2] - 2022-07-27
+## 2.7.2 - 2022-07-27
 ### Fixed
 - Fix the option **paste-once** of  **wl-copy**
 
-## [2.7.1] - 2022-07-27
+## 2.7.1 - 2022-07-27
 ### Fixed
 - Make **curl** silent
 
-## [2.7.0] - 2022-07-27
+## 2.7.0 - 2022-07-27
 ### Added
 - Replace [x0.at](https://x0.at) with [0x0.st](https://0x0.st)
 
