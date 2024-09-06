@@ -23,6 +23,7 @@ Default template of screenshot filename is _screenshot_YYYY-MM-DD_HH24-MI-SS_SSS
 
 User variables in **~/.config/swayshot.sh**.
 
+-   **SWAYSHOT_HIDE_NOTIFICATION** allows to avoid the notification;
 -   **SWAYSHOT_SCREENSHOTS** defines your own screenshot folder;
 -   **SWAYSHOT_DATEFMT** defines timestamp format (see `man date`), thanks [Ranieri Althoff](https://gitlab.com/ranisalt) for help.
 -   **SWAYSHOT_WL_COPY_FILE** defines whether the image file itself should be copied to clipboard.
